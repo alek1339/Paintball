@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6, p{
+    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+}
+
+h3{
+  margin-top: 0;
+}
+
+div img {
+    object-fit: cover;
+    width: 100%;
+}
+  header{
+    background-image: url(./images/slide.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px auto;
+      width: 100%;
+      min-height: 100vh;
+      background-size: cover;
+  }
+
+  .slider{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-self: start ;
+    text-align: center;
+    color: white;
+  }
+
+  .slider h2{
+    margin: 0;
+    padding: 0;
+    font-size:104px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 80px;
+  }
+  .slider h2 span{
+    font-weight: 900;
+  }
+
+  .slider p{
+    font-size:21px;
+    font-weight:100;
+  }
+
+  .nav{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: end;
+    padding-right: 4rem;
+    align-self: center;
+  }
+
+  .logo h1{
+    padding-left: 6rem;
+    letter-spacing: -0.06em;
+      font-size:70px;   
+  }
+
+  h1 a{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;     
+  }
+  .logo-text{
+      padding-left: 4px;
+    vertical-align: top;
+    letter-spacing: 0;
+    font-size: 24px;
+    letter-spacing: 2.5px;
+    line-height: 5px;
+}
+  nav ul li{
+      display: inline;
+      margin-left: 23px;
+  }
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+  }
+
+button {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 21px;
+    line-height: 70px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #60332c;
+    transition: background-color 0.4s ease;
+    border: none;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+button:hover{
+background-color: #36362E;
+}
+
+.welcome-section{
+  background-image: url(./images/item_bg.jpg);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.welcome-section h3{
+  margin-top: 0;
+  padding-top: 91px;
+  padding-bottom: 12px;
+  font-size: 54px;
+  line-height: 58px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.welcome-section h4{
+  padding-bottom: 17px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.welcome-section span{
+  font-weight: 100;
+}
+
+.welcome-section p{
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 91px;
+  margin-bottom: 0;
+}
+
+
+/* About Section */
+.about-section{
+  background: #D2D2D0;
+  text-align: center;
+  padding: 3rem;
+}
+
+.about-container figcaption{
+  font-size:15px;
+  line-height: 24px;
+  color:  #404040;
+}
+
+.about-section h3{
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-container{
+  display: flex;  
+}
+
+/* Be the best section */
+.be-the-best-section{
+  background-image: url(./images/page1_img4.jpg);
+  background-size: cover;
+  color: white;
+  padding:3rem;
+  text-align: center;
+}
+.be-the-best-section h2{
+  margin-top:0;
+  font-size:104px;
+  text-transform: uppercase;  
+}
+
+/* Events section */
+.events-section{
+  background: #D2D2D0;
+  text-align: center;
+  padding: 3rem;
+}
+.events-section h3{
+  font-size: 54px;
+  text-transform: uppercase;
+  color:#404040;
+  font-weight:900;
+}
+.events-div{
+  display: flex;
+}
+.events-div article{
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+.events-div h4{
+  color: #60332c;
+  text-transform: uppercase;
+  font-size:20px;
+}
+
+/* Quote Section */
+.quote-section{
+  background-image: url(./images/item_bg.jpg);
+  padding: 3rem;
+  color: white;
+  font-size: 15px;
+}
+.quote-section figure{
+  display: flex;
+  margin: 0;
+}
+.quote-section figure img{
+  border-radius: 50%;
+}
+.quote-section h4{
+  padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.quote-section div{
+  padding: 2rem;
+}
+
+/* Footer */
+footer{
+  text-align: center;
+  padding: 100px;
+  background: #1E1E1E;
+  color: #626262;
+}
+.fa {
+  padding: 40px;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #2b2b2b;
+  border-radius: 50%;
+  color: #626262;
+  transition: border-color;
+  font-size: 100px;
+}
+
