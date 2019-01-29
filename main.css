@@ -15,7 +15,7 @@ div img {
     object-fit: cover;
     width: 100%;
 }
-  header{
+  .home-header{
     background-image: url(./images/slide.jpg);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -256,3 +256,144 @@ footer{
   font-size: 100px;
 }
 
+/* About Page */
+
+h2{
+  font-size: 54px;
+  font-weight: 900;
+  text-transform: uppercase;  
+}
+h2 span{
+  font-weight: 100;
+}
+a{
+  color: #60332c;
+  text-decoration: none;
+}
+
+header{
+  background-image: url(./images/slide.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px auto;
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+}
+
+.who-we-are{
+  background-image: url(./images/item_bg.jpg);
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.two-cols{
+  display: flex;
+  text-align: justify;
+}
+.two-cols article{
+  flex: 1;
+  padding: 1rem;
+  
+}
+
+.what-we-do{
+  background-color: #d2d2d0;
+  color: #404040;
+  padding: 3rem;
+}
+
+.what-we-do h2{
+  text-align: center;
+}
+
+.what-we-do-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.what-we-do-grid article{
+  padding: 1rem;
+}
+
+.our-players{
+  background-image: url(./images/item_bg.jpg);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.our-players h2, .our-players a{
+  color: white; 
+}
+
+figure img{
+  margin-bottom: 2rem;
+}
+
+.players-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stats{
+  background-color: #d2d2d0;
+  color: #626262;
+  text-align: center;
+  padding: 3rem;
+}
+
+.stats-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: justify;
+}
+
+.stats-grid article{
+  padding: 2rem;
+  padding-right: 4rem;
+}
+
+/* Events */
+.last-news{
+  background-image: url(./images/page3_img3.jpg);
+  text-align: center;
+  padding: 3rem;
+  color: white;
+}
+.last-news-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.news-and-events{
+  background-color: #d2d2d0;
+  text-align: center;
+  padding: 3rem;
+}
+.news-and-events h2{
+  color: #626262;
+}
+
+.news-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: justify;
+}
+.news-grid article, .news-grid div{
+  padding-right: 2rem;
+}
+.latest-videos {
+  text-align: center;
+  color: white;
+  background-image: url(./images/page3_img4.jpg);
+  padding: 3rem;
+}
+
+.latest-videos div{
+  display: flex;
+}
+.latest-videos div iframe{
+  padding-right: 2rem;
+}
