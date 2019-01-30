@@ -7,6 +7,10 @@ h1,h2,h3,h4,h5,h6, p{
     margin-top: 0;
 }
 
+.active{
+  color: #b76659
+}
+
 h3{
   margin-top: 0;
 }
@@ -36,7 +40,7 @@ div img {
   .slider h2{
     margin: 0;
     padding: 0;
-    font-size:104px;
+    font-size:8rem;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 80px;
@@ -61,7 +65,7 @@ div img {
   .logo h1{
     padding-left: 6rem;
     letter-spacing: -0.06em;
-      font-size:70px;   
+    font-size:5rem;   
   }
 
   h1 a{
@@ -116,7 +120,7 @@ background-color: #36362E;
   padding-right: 1rem;
 }
 
-.welcome-section h3{
+.welcome-section h2{
   margin-top: 0;
   padding-top: 91px;
   padding-bottom: 12px;
@@ -127,7 +131,7 @@ background-color: #36362E;
   text-align: center;
 }
 
-.welcome-section h4{
+.welcome-section h3{
   padding-bottom: 17px;
   font-size: 20px;
   line-height: 32px;
@@ -161,7 +165,7 @@ background-color: #36362E;
   color:  #404040;
 }
 
-.about-section h3{
+.about-section h2{
     font-size: 54px;
     line-height: 58px;
     font-weight: 900;
@@ -193,7 +197,7 @@ background-color: #36362E;
   text-align: center;
   padding: 3rem;
 }
-.events-section h3{
+.events-section h2{
   font-size: 54px;
   text-transform: uppercase;
   color:#404040;
@@ -206,7 +210,7 @@ background-color: #36362E;
   padding-right: 1rem;
   padding-bottom: 2rem;
 }
-.events-div h4{
+.events-div h3{
   color: #60332c;
   text-transform: uppercase;
   font-size:20px;
@@ -226,7 +230,7 @@ background-color: #36362E;
 .quote-section figure img{
   border-radius: 50%;
 }
-.quote-section h4{
+.quote-section h3{
   padding-bottom: 17px;
     font-size: 20px;
     line-height: 32px;
@@ -397,3 +401,153 @@ figure img{
 .latest-videos div iframe{
   padding-right: 2rem;
 }
+
+.info{
+  background-color: #d2d2d0;
+  color: #626262;
+  padding: 3rem;
+  text-align: center;
+}
+
+.info-flex{
+  display: flex;
+  text-align: justify;
+}
+.info-flex img{
+  padding: 1rem;
+}
+.info-flex div{
+  padding: 1rem;
+}
+
+/* Galery */
+.gallery{
+  background-image: url(./images/item_bg.jpg);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 50px;
+}
+
+/* Contacts */
+.contacts{
+  background-color: #d2d2d0;
+  color: #626262;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 50px;
+  padding: 3rem;
+  text-align: center;
+}
+form input{
+  font-family: 'Lato', sans-serif;
+  width: 60%;
+  display: block;
+  font-size: 15px;
+  line-height: 18px;  
+  padding: 9px 14px;
+  border: 1px solid #e9ebe5;
+  height: 41px;
+  box-sizing: border-box;
+  font-weight: 300;
+  background: #dddddc;
+}
+form textarea{
+  display: block;
+  font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 11px 16px;
+    border: 1px solid #e9ebe5;
+    width: 90%;
+    resize: none;
+    outline: none;
+    height: 119px;
+    font-weight: 300;
+    background: #dddddc;
+    margin: 0;
+}
+
+.contacts div{
+  text-align: initial;
+}
+.contacts h2{
+  text-align: center;
+}
+
+.contacts a{
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .gallery{
+    grid-template-columns: 1fr 1fr;
+  }
+  .slider h2, .be-the-best-section h2{
+    font-size:6rem;
+  }
+  .logo h1{
+    padding-left: 0;
+    letter-spacing: -0.06em;
+    font-size:4rem;   
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .two-cols  {
+    flex-direction: column; 
+  }
+  .events-div  {
+    flex-direction: column; 
+  }
+  .info-flex {
+    flex-direction: column; 
+  }
+  .events-div{
+    flex-direction: column; 
+  }
+  .about-container{
+    flex-direction: column; 
+  }
+  .slider h2, .be-the-best-section h2{
+    font-size:5rem;
+  }
+
+  .what-we-do-grid , .players-grid , .stats-grid , .last-news-grid , .news-grid , .contacts{
+    grid-template-columns: 1fr; 
+  }
+
+  .home-header{
+
+  }
+
+  nav ul li{
+    display: block;
+  }
+  .nav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-right: 2rem;
+  }
+  .logo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  header{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery{
+    grid-template-columns: 1fr; 
+  }
+  .gallery img{
+    width: 100%;
+  }
+  .slider h2, .be-the-best-section h2{
+    font-size:4rem;
+  }
+}
+
