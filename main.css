@@ -123,7 +123,7 @@ nav ul li a:hover{
 }
 
 .welcome-section{
-  background-image: url(./images/item_bg.jpg);
+  background-image: url(./images/item_bg.JPEG);
   color: white;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -227,7 +227,7 @@ nav ul li a:hover{
 
 /* Quote Section */
 .quote-section{
-  background-image: url(./images/item_bg.jpg);
+  background-image: url(./images/item_bg.JPEG);
   padding: 3rem;
   color: white;
   font-size: 15px;
@@ -295,7 +295,7 @@ header{
 }
 
 .who-we-are{
-  background-image: url(./images/item_bg.jpg);
+  background-image: url(./images/item_bg.JPEG);
   color: white;
   padding: 3rem;
   text-align: center;
@@ -331,7 +331,7 @@ header{
 }
 
 .our-players{
-  background-image: url(./images/item_bg.jpg);
+  background-image: url(./images/item_bg.JPEG);
   color: white;
   text-align: center;
   padding: 3rem;
@@ -435,7 +435,7 @@ figure img{
 
 /* Galery */
 .gallery{
-  background-image: url(./images/item_bg.jpg);
+  background-image: url(./images/item_bg.JPEG);
   padding: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
