@@ -27,6 +27,7 @@ div img {
       width: 100%;
       min-height: 100vh;
       background-size: cover;
+      padding-bottom: 3rem;
   }
 
   .slider{
@@ -546,11 +547,15 @@ form textarea{
   }
   .logo{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
   }
 
   header{
     height: 400px;
+  }
+
+  .home-header{
+    grid-template-rows: 250px auto;
   }
 }
 
@@ -577,3 +582,25 @@ form textarea{
   }
 }
 
+
+/* HAMBURGER MENU */
+
+.icon {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+  .icon {
+    display: block;
+    float: right;
+  }
+
+  .nav{
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  nav{
+    display: none;
+  }
+}

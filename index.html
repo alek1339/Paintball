@@ -10,22 +10,30 @@
     <title>Paintball</title>
 </head>
 
-<body>
+<body onresize="resized()">
     <!-- Navbar -->
-    <div class="home-header">
+    <div class="home-header" id="header"> 
         <div class="logo">
             <h1><a href="index.html">Cobra <br> <span class="logo-text">Paintball club</span></a></h1>
         </div>
         <div class="nav">
-            <nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+            <nav id="nav" class="notshowed">
                 <ul>
                     <li><a href="#" class="active">home</a></li>
                     <li><a href="about.html">about</a></li>
                     <li><a href="events.html">events</a></li>
                     <li><a href="gallery.html">gallery</a></li>
                     <li><a href="contacts.html">contacts</a></li>
+                    <li>
+                            
+                    </li>
                 </ul>
+                
             </nav>
+            
         </div>
 
         <!-- Slider -->
@@ -127,7 +135,7 @@
     <!-- Quote Sectuon -->
     <section class="quote-section">
         <figure>
-            <img src="./images/page1_img5.jpg" alt="">
+            <img src="./images/page1_img5.jpg" width="50%">
             <div>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
                 <figcaption>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -154,6 +162,11 @@
         </div>
         Cobra © 2019. Privacy Policy
     </footer>
+
+    
+        <script src="./js/hamburgerMenu.js">
+            
+        </script>
 </body>
 
 </html>
