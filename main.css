@@ -43,7 +43,7 @@ div img {
     font-size:8rem;
     text-transform: uppercase;
     font-weight: 300;
-    line-height: 80px;
+    line-height: 90px;
   }
   .slider h2 span{
     font-weight: 900;
@@ -420,6 +420,10 @@ figure img{
   padding: 1rem;
 }
 
+.latest-videos div{
+  display: flex;
+}
+
 /* Galery */
 .gallery{
   background-image: url(./images/item_bg.jpg);
@@ -491,6 +495,10 @@ form textarea{
     letter-spacing: -0.06em;
     font-size:4rem;   
   }
+  .stats-grid {
+    grid-template-columns: 1fr; 
+  }
+
 }
 
 @media only screen and (max-width: 860px) {
@@ -513,14 +521,21 @@ form textarea{
     font-size:5rem;
   }
 
-  .what-we-do-grid , .players-grid , .stats-grid , .last-news-grid , .news-grid , .contacts{
+  .latest-videos div{
+    flex-direction: column; 
+  }
+
+  .latest-videos div iframe{
+    padding-bottom: 2rem;
+  }
+
+  .what-we-do-grid , .players-grid  , .last-news-grid , .news-grid , .contacts{
     grid-template-columns: 1fr; 
   }
 
-  .home-header{
-
+  .quote-section figure{
+    flex-direction: column; 
   }
-
   nav ul li{
     display: block;
   }
@@ -546,8 +561,19 @@ form textarea{
   .gallery img{
     width: 100%;
   }
-  .slider h2, .be-the-best-section h2{
-    font-size:4rem;
+  .slider h2 , .be-the-best-section h2 , .info h2 {
+    font-size:3rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .slider h2, .be-the-best-section h2 , .info h2{
+    font-size:2rem; 
+  }
+}
+@media only screen and (max-width: 360px) {
+  .slider h2, .be-the-best-section h2 {
+    font-size:1rem;
   }
 }
 
