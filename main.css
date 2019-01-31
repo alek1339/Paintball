@@ -88,7 +88,7 @@ div img {
   }
   nav ul li a {
       text-decoration: none;
-      color: white;
+      color: #d2d2d0;
       font-size: 20px;
       text-transform: uppercase;
       font-weight: 700;
@@ -112,6 +112,14 @@ button a{
 }
 button:hover{
 background-color: #36362E;
+}
+
+nav ul li a:hover{
+  color: white;
+}
+
+.logo a:hover{
+  color: #D2D2D0;
 }
 
 .welcome-section{
@@ -589,6 +597,11 @@ form textarea{
   display: none;
 }
 
+.fa{
+  color: #d2d2d0;
+  border-color: #d2d2d0;
+}
+
 @media only screen and (max-width: 860px) {
   .icon {
     display: block;
@@ -598,6 +611,7 @@ form textarea{
   .nav{
     grid-column-start: 3;
     grid-column-end: 4;
+    align-self: start;
   }
 
   nav{
