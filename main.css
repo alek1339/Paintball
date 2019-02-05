@@ -558,6 +558,10 @@ form textarea{
     grid-column-end: 3;
   }
 
+  .logo h1{
+    font-size: 3rem;
+  }
+
   header{
     height: 400px;
   }
@@ -582,6 +586,10 @@ form textarea{
 @media only screen and (max-width: 460px) {
   .slider h2, .be-the-best-section h2 , .info h2{
     font-size:2rem; 
+  }
+
+  .logo h1{
+    font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 360px) {
