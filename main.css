@@ -617,4 +617,7 @@ form textarea{
   nav{
     display: none;
   }
+  .nav{
+    padding-right: 0;
+  }
 }
