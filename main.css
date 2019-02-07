@@ -7,13 +7,6 @@ h1,h2,h3,h4,h5,h6, p{
     margin-top: 0;
 }
 
-.notshowed{
-  display: none;
-}
-.notshowed{
-  display: block;
-}
-
 .active{
   color: #b76659
 }
@@ -638,3 +631,11 @@ form textarea{
     padding-right: 0;
   }
 }
+
+@media only screen and (max-width: 497px) {
+  .slider h2{
+    line-height: 60px;
+  }
+}
+
+
