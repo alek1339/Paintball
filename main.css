@@ -623,10 +623,10 @@ form textarea{
 }
 
 @media only screen and (max-width: 860px) {
-  /* .icon {
-    display: block;
+  .icon {
+    /* display: block; */
     float: right;
-  } */
+  }
 
   .nav{
     grid-column-start: 3;
