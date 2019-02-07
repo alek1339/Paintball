@@ -7,6 +7,13 @@ h1,h2,h3,h4,h5,h6, p{
     margin-top: 0;
 }
 
+.notshowed{
+  display: none;
+}
+.notshowed{
+  display: block;
+}
+
 .active{
   color: #b76659
 }
@@ -545,9 +552,7 @@ form textarea{
   .quote-section figure{
     flex-direction: column; 
   }
-  nav ul li{
-    display: block;
-  }
+
   .nav{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -590,7 +595,7 @@ form textarea{
 }
 
 @media only screen and (max-width: 460px) {
-  .slider h2, .be-the-best-section h2 , .info h2{
+   .be-the-best-section h2 , .info h2{
     font-size:2rem; 
   }
 
@@ -600,7 +605,7 @@ form textarea{
   
 }
 @media only screen and (max-width: 360px) {
-  .slider h2, .be-the-best-section h2 {
+   .be-the-best-section h2 {
     font-size:1rem;
   }
 }
@@ -618,10 +623,10 @@ form textarea{
 }
 
 @media only screen and (max-width: 860px) {
-  .icon {
+  /* .icon {
     display: block;
     float: right;
-  }
+  } */
 
   .nav{
     grid-column-start: 3;
@@ -629,9 +634,6 @@ form textarea{
     align-self: start;
   }
 
-  nav{
-    display: none;
-  }
   .nav{
     padding-right: 0;
   }
