@@ -552,9 +552,7 @@ form textarea{
   .quote-section figure{
     flex-direction: column; 
   }
-  nav ul li{
-    display: block;
-  }
+
   .nav{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -597,7 +595,7 @@ form textarea{
 }
 
 @media only screen and (max-width: 460px) {
-  .slider h2, .be-the-best-section h2 , .info h2{
+   .be-the-best-section h2 , .info h2{
     font-size:2rem; 
   }
 
@@ -607,7 +605,7 @@ form textarea{
   
 }
 @media only screen and (max-width: 360px) {
-  .slider h2, .be-the-best-section h2 {
+   .be-the-best-section h2 {
     font-size:1rem;
   }
 }
@@ -626,7 +624,7 @@ form textarea{
 
 @media only screen and (max-width: 860px) {
   .icon {
-    display: block;
+    /* display: block; */
     float: right;
   }
 
@@ -636,10 +634,25 @@ form textarea{
     align-self: start;
   }
 
-  nav{
-    display: none;
-  }
   .nav{
     padding-right: 0;
   }
 }
+
+@media only screen and (max-width: 497px) {
+  .slider h2{
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 1003px) {
+  .nav{
+    padding-right: 0;
+  }
+  nav ul li {
+    margin-left: 17px;
+  }
+}
+
+
+

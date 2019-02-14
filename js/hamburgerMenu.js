@@ -1,23 +1,40 @@
 function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "notshowed") {
-        x.style.display = "block";
-        x.className = "showed";
+    var nav = document.getElementById("nav");
+    let li = document.getElementsByTagName('li')
+
+    if (nav.className === "notshowed") {
+        nav.className = "showed";
+        nav.style.display = "block";
 
     } else {
-        x.className = "notshowed";
-        x.style.display = "none";
+        nav.className = "notshowed";
+        nav.style.display = "none";
+
     }
 }
 
 function resized(){
     var width = window.outerWidth;
-    var x = document.getElementById("nav");
-    if(width > 860){
-        x.style.display = "inline";
-    }
-    if(width <= 860){
-        x.style.display = "none";
+    var nav = document.getElementById("nav");
+    let icon = document.getElementsByClassName('icon')
+    let li = document.getElementsByTagName('li')
+
+    if(width > 875){
+        nav.style.display = "block";
+        icon[0].style.display = 'none'
+        
+        for(let i = 0; i < li.length; i++){
+            li[i].style.display = 'inline'
+        }
+        
+    } else {
+        nav.style.display = "none";
+        icon[0].style.display = 'block'
+        
+        for(let i = 0; i < li.length; i++){
+            li[i].style.display = 'block'
+        }
+
     }
 
 }
