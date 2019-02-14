@@ -112,7 +112,9 @@ button a{
 }
 button:hover{
 background-color: #36362E;
+cursor: pointer
 }
+
 
 nav ul li a:hover{
   color: white;
@@ -440,6 +442,11 @@ figure img{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 50px;
+
+}
+
+.gallery img{
+  width: 98%;
 }
 
 /* Contacts */
